@@ -1,7 +1,7 @@
 ---
 output:
-  word_document: default
   html_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -27,22 +27,18 @@ v_caracter = c("Conhecendo","VETOR", "na","linguagem","R")
 v_caracter
 class(v_caracter)
 
-# Vetor de Floats
 v_float = c(1.2, 5.5, 8.3, 7.3, 10.0)
 v_float
 class(v_float)
 
-# vetor de valores complexos
 v_complexo = c(4.3 + 8i,7.8 + 7.9i)
 v_complexo
 class(v_complexo)
 
-# Vetor de valores lógicos
 v_logico = c(TRUE,FALSE,TRUE,FALSE,FALSE)
 v_logico
 class(v_logico)
 
-# Vetor de números inteiros
 v_interger = c(2,4,6)
 v_interger
 class(v_interger)
@@ -57,39 +53,30 @@ class(v_caracter) = "character"
 </p><p> class(v_interger) = "numeric"</p><p>
 Iremos conhecer mais algumas função utilizando o Vetor "v_interger":</p><p>
 ```{r vet3}
-# Vetor
 v_interger
-#Soma de todos os números dentro do vetor
 sum(v_interger)
 
-# Maior número dentro do vetor
 
 max(v_interger)
 
-# Menor número dentro do vator
 
 min(v_interger)
 
-# Quantidade de item dentro do vetor
 
 length(v_interger)
 
-#Média do vetor
-# media = sum(v_interger) / length(v_interger)
-#Podemos utilizar a função "mean"
+
 mean(v_interger)
 ```
 
 <P><b>chamar uma sequência de número dentro de um vetor:</b></p>
 ```{r v4}
 
-# Função seq()
 vetor1 = seq(1:10)
 vetor1
 is.vector(vetor1)
 
 
-# Função rep()
 vetor2 = rep(1:5)
 vetor2
 is.vector(vetor2)
@@ -98,25 +85,21 @@ vetor3 = c(10:50)
 vetor3
 is.vector(vetor3)
 
-# Comando lógico (TRUE ou FALSE)
 vetor4 = (vetor3>45)
 vetor4
 
 
-# me retorna os número 
 vetor3[vetor3>45]
 
-#Retorna a posição de número 46, 47, 48, 49, 50 (Entre 10 a 50 possui 41 itens
+
 which(vetor3>45)
 
-# Criando um vetor do número 10 até o número 50, coninetrvalo de 05 em 05
+
 vetor5 = seq(10,50, by=5)
 vetor5
 
-#repetir cada item 0 quantidade que eu colocar no each
 rep(1:4, each=4)
 
-# Repitir 04 vezes a sequencia de 1 até 4
 rep(1:4, 4)
 ```
 
